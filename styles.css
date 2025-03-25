@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style :normal;
+}
+.navbar{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid black 2px;
+  gap: 15px;
+  align-items: center;
+}
+.navbar__s1__title{
+  color: #a435f0;
+}
+.navbar__s2{
+  border: solid black 2px;
+  border-radius: 30px;
+  padding: 10px;
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navbar__s2 input{
+  border: none;
+  width: 100%; 
+  font-size: 18px;
+  background: transparent;
+}
+
+.navbar__s2 input::placeholder {
+  color: gray;
+}
+.navbar__s2 input:focus{
+  outline: none;
+}
+.navbar__s3{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.categories p{
+  margin: 10px;
+}
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+flex-basis: 30%;
+flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid black 2px;
+  padding: 12px;
+}
+.categories p{
+  background-color: #a435f0;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+.sale-image img{
+  width: 100%;
+
+}
+.recommended{
+  padding: 10px;
+}
+.recommended__container{
+display: flex;
+justify-content: space-evenly;
+margin-top: 11px;
+flex-wrap: wrap;
+}
+.course-card{
+  width: 300px;
+}
+.course-card img{
+  width: 100%;
+  height: 55%;
+}
+.topics{
+  padding: 10px;
+}
+.topics__container{
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+  
+}
+.topics__container p{
+border: solid grey 2px;
+padding: 10px;
+flex-grow: 1;
+flex-basis: 25%;
+}
+.popular{
+  padding: 10px;
+}
+.popular__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.footer{
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.footer1{
+  display: flex;
+  gap: 25px;
+}
+.footer2{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  align-items:center ;
+}
+
+.footer1 p{
+  margin: 10px;
+}
+
+
+
+
+@media screen and(max-width:768px){
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .navbar__s2{
+    width: 90%;
+  }
+  .navbar__s3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+
+  .navbar__s3 p, .navbar__s3 i{
+    font-size: 14px;
+  }
+}

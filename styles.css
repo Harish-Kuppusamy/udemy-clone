@@ -207,28 +207,3 @@ flex-basis: 25%;
 }
 
 
-
-
-@media screen and(max-width:768px){
-  .navbar{
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  .navbar__s2{
-    width: 90%;
-  }
-  .navbar__s3{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-
-  .navbar__s3 p, .navbar__s3 i{
-    font-size: 14px;
-  }
-}
